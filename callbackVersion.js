@@ -56,19 +56,6 @@ function waterGarden(name, callback) {
   },500);
 } 
 
-function weedeat(name, callback) {
-  setTimeout(() => {
-    const notTired = Math.random() > 0.5;
-    if (notTired ){
-    console.log(`${name} finished using the weedeater.`);
-    callback();
-    }
-    else {
-    console.log(`${name} fell asleep after mowing the yard.`);
-    }
-  },1500);
-} 
-
 function doSummerChores(name) {
   mowYard(name, () => {
     weedEat(name, () => {
